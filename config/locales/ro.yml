@@ -1,0 +1,77 @@
+ro:
+  activerecord:
+    attributes:
+      user:
+        email: "E-mail"
+        password: "Parola secreta"
+        password_confirmation: "Confirma parola secreta"
+        current_password: "Parola curenta"
+        remember_me: "Tine-ma minte"
+  devise:
+    confirmations:
+      new:
+        heading_confirmation: "Retrimite instructiunile de confirmare"
+        button_to_send: "Retrimite"
+    mailer:
+      confirmation_instructions:
+        first_par: "Buna ziua"
+        second_par: "Puteti confirma e-mailul contului dvs. prin linkul de mai jos: "
+        link_to_confirm_account: "Confirma contul"
+      password_change:
+        hello_par: "Buna"
+        notify_par: "Va contactam pentru a va anunta ca parola dvs. a fost schimbata."
+      reset_password_instructions:
+        reset_hello_par: "Buna"
+        notify_req_par: "Cineva a cerut un link pentru a va schimba parola. Puteti face acest lucru prin linkul de mai jos."
+        link_to_change_pass: "Schimba-mi parola"
+        notify_ignore_par: "Daca nu ati solicitat acest lucru, va rugam sa ignorati acest e-mail."
+        notify_access_link: "Parola nu se va schimba pana cand nu accesati linkul de mai sus si nu creati unul nou."
+      unlock_instructions:
+        unlock_hello_par: "Buna"
+        notify_locked_par: "Contul dvs. a fost blocat din cauza unui numar excesiv de incercari de conectare nereusite."
+        click_unlock: "Faceti click pe linkul de mai jos pentru a va debloca contul:"
+        link_to_unlock: "Deblocheaza contul meu"
+    sessions:
+      new:
+        heading_login: "Autentificare"
+        login_button: "Logheaza-te"
+    registrations:
+      edit:
+        edit_heading: "Editare"
+        waiting_confirmation: "Momentan se asteapta confirmarea pentru:"
+        info_mess: "lasati necompletat daca nu doriti să il schimbati"
+        update_button: "Actualizati"
+        unhappy_mess: "Nefericit?"
+        delete_button: "Sterge contul"
+      new:
+        heading_signup: "Inscriere"
+        signup_button: "Inscrie-te"
+    passwords:
+      edit:
+        change_pass: "Schimbati-va parola"
+        change_my_pass: "Schimba-mi parola"
+      new:
+        heading_forgot_password: "Ati uitat parola?"
+        send_pass_info: "Trimiteți informații despre resetarea parolei"
+    shared:
+      form_footer:
+        form_footer: "© %{year} Daniel. All rights reserved."
+      links:
+        login: "Logheaza-te"
+        forgotpass: "Ati uitat parola?"
+        sigup: "Inscrie-te"
+        no_confirmation: "Nu ați primit informații de confirmare?"
+        no_unlock: "Nu ați primit informații de deblocare?"
+        sign_in_with: "Inscrie-te cu"
+    unlocks:
+      new:
+        heading_resend_info: "Retrimite informatiile pentru deblocare"
+        resend_unlock_button: "Retrimite instructiunile pentru deblocare"
+  layouts:
+    application:
+      app_tittle: "Action Cable Chat"
+      sign_in_link: "Logheaza-te"
+      log_out_button: "Deconectati-va"
+  site:
+    index:
+      submit_chat: "Trimite"

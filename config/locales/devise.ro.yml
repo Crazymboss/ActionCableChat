@@ -1,0 +1,65 @@
+# Additional translations at https://github.com/heartcombo/devise/wiki/I18n
+
+ro:
+  devise:
+    confirmations:
+      confirmed: "Adresa dvs. de e-mail a fost confirmată cu succes."
+      send_instructions: "Veți primi un e-mail cu instrucțiuni despre cum să vă confirmați adresa de e-mail în câteva minute."
+      send_paranoid_instructions: "Dacă adresa dvs. de e-mail există în baza noastră de date, veți primi un e-mail cu instrucțiuni despre cum să vă confirmați adresa de e-mail în câteva minute."
+    failure:
+      already_authenticated: "Esti deja logat"
+      inactive: "Contul tau nu este inca activat."
+      invalid: "%{authentication_keys} invalida sau  parola."
+      locked: "Contul tău este blocat."
+      last_attempt: "Mai aveți o încercare înainte de a vă bloca contul."
+      not_found_in_database: "%{authentication_keys} invalida sau  parola."
+      timeout: "Sesiunea dvs. a expirat. Vă rugăm să vă conectați din nou pentru a continua."
+      unauthenticated: "Trebuie să vă conectați sau să vă înregistrați înainte de a continua."
+      unconfirmed: "Trebuie să vă confirmați adresa de e-mail înainte de a continua."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrucțiuni de confirmare"
+      reset_password_instructions:
+        subject: "Resetați instrucțiunile pentru parolă"
+      unlock_instructions:
+        subject: "Instrucțiuni de deblocare"
+      email_changed:
+        subject: "E-mail schimbat"
+      password_change:
+        subject: "Parolă schimbată"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "Nu puteți accesa această pagină fără să veniți dintr-un e-mail de resetare a parolei. Dacă veniți dintr-un e-mail de resetare a parolei, asigurați-vă că ați folosit adresa URL completă furnizată."
+      send_instructions: "Veți primi un e-mail cu instrucțiuni despre cum să vă resetați parola în câteva minute."
+      send_paranoid_instructions: "Dacă adresa dvs. de e-mail există în baza noastră de date, veți primi un link de recuperare a parolei la adresa dvs. de e-mail în câteva minute."
+      updated: "Parola dvs. a fost schimbată cu succes. Acum sunteți conectat."
+      updated_not_active: "Parola dvs. a fost schimbată cu succes."
+    registrations:
+      destroyed: "Pa! Contul dvs. a fost anulat cu succes. Sperăm să ne revedem curând."
+      signed_up: "Bine ati venit! Te-ai înscris cu succes."
+      signed_up_but_inactive: "Te-ai înscris cu succes. Cu toate acestea, nu v-am putut conecta deoarece contul dvs. nu este încă activat."
+      signed_up_but_locked: "Te-ai înscris cu succes. Cu toate acestea, nu v-am putut conecta deoarece contul dvs. este blocat."
+      signed_up_but_unconfirmed: "Un mesaj cu un link de confirmare a fost trimis la adresa ta de e-mail. Vă rugăm să urmați linkul pentru a vă activa contul."
+      update_needs_confirmation: "V-ați actualizat contul cu succes, dar trebuie să vă verificăm noua adresă de e-mail. Vă rugăm să vă verificați e-mailul și să urmați linkul de confirmare pentru a vă confirma noua adresă de e-mail."
+      updated: "Contul dvs. a fost actualizat cu succes."
+      updated_but_not_signed_in: "Contul dvs. a fost actualizat cu succes, dar, deoarece parola dvs. a fost schimbată, trebuie să vă conectați din nou."
+    sessions:
+      signed_in: "Conectat cu succes."
+      signed_out: "Deconectat cu succes."
+      already_signed_out: "Deconectat cu succes."
+    unlocks:
+      send_instructions: "Veți primi un e-mail cu instrucțiuni despre cum să vă deblocați contul în câteva minute."
+      send_paranoid_instructions: "Dacă contul dvs. există, veți primi un e-mail cu instrucțiuni despre cum să îl deblocați în câteva minute."
+      unlocked: "Contul dvs. a fost deblocat cu succes. Vă rugăm să vă conectați pentru a continua."
+  errors:
+    messages:
+      already_confirmed: "a fost deja confirmat, încercați să vă conectați"
+      confirmation_period_expired: "trebuie confirmat în %{period}, vă rugăm să solicitați unul nou"
+      expired: "a expirat, vă rugăm să solicitați unul nou"
+      not_found: "nu a fost găsit"
+      not_locked: "nu a fost blocat"
+      not_saved:
+        one: "O eroare a interzis salvarea acestei %{resurse}:"
+        other: "%{count} erori au interzis salvarea acestei %{resurse}:"

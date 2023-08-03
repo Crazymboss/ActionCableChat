@@ -1,33 +1,77 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        email: "E-mail"
+        password: "Secret password"
+        password_confirmation: "Secret password confirmation"
+        current_password: "Current Password"
+        remember_me: "Remember me"
+  devise:
+    confirmations:
+      new:
+        heading_confirmation: "Resend Confirmation Instructions"
+        button_to_send: "Resend Confirmation Info"
+    mailer:
+      confirmation_instructions:
+        first_par: "Welcome"
+        second_par: "You can confirm your account email through the link below:"
+        link_to_confirm_account: "Confirm my account"
+      password_change:
+        hello_par: "Hello"
+        notify_par: "We're contacting you to notify you that your password has been changed."
+      reset_password_instructions:
+        reset_hello_par: "Hello"
+        notify_req_par: "Someone has requested a link to change your password. You can do this through the link below."
+        link_to_change_pass: "Change my password"
+        notify_ignore_par: "If you didn't request this, please ignore this email."
+        notify_access_link: "Your password won't change until you access the link above and create a new one."
+      unlock_instructions:
+        unlock_hello_par: "Hello"
+        notify_locked_par: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+        click_unlock: "Click the link below to unlock your account:"
+        link_to_unlock: "Unlock my account"
+    sessions:
+      new:
+        heading_login: "Log In"
+        login_button: "Log In"
+    registrations:
+      edit:
+        edit_heading: "Edit"
+        waiting_confirmation: "Currently waiting confirmation for:"
+        info_mess: "leave blank if you don't want to change it"
+        update_button: "Update"
+        unhappy_mess: "Unhappy?"
+        delete_button: "Delete my account"
+      new:
+        heading_signup: "Sign Up"
+        signup_button: "Sign Up"
+    passwords:
+      edit:
+        change_pass: "Change Your Password"
+        change_my_pass: "Change My Password"
+      new:
+        heading_forgot_password: "Forgot your password?"
+        send_pass_info: "Send Password Reset Info"
+    shared:
+      form_footer:
+        form_footer: "© %{year} Daniel. All rights reserved."
+      links:
+        login: "Log In"
+        forgotpass: "Forgot Password?"
+        sigup: "Sign Up"
+        no_confirmation: "Didn't receive confirmation info?"
+        no_unlock: "Didn't receive unlock info?"
+        sign_in_with: "Sign in with"
+    unlocks:
+      new:
+        heading_resend_info: "Resend Unlock Info"
+        resend_unlock_button: "Resend unlock instructions"
+  layouts:
+    application:
+      app_tittle: "Action Cable Chat"
+      sign_in_link: "Log in"
+      log_out_button: "Log out"
+  site:
+    index:
+      submit_chat: "Submit"
